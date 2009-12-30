@@ -1,19 +1,32 @@
 ---
-title:       Home Page
-created_at:  2008-08-02 14:06:40.000000 -06:00
-filter:
-  - erb
-  - textile
+title: Home Page
+created_at: 2008-08-02 14:06:40.000000 -06:00
+filter: haml
 ---
-p(title). <%= @page.title %>
+%p.callout
+  We are a web development firm specializing in cutting-edge web applications |
+  that help you grow your business and run it more efficiently.               |
+%p We strive to be relevant, simple, and offer exceptional service with unparalleled integrity.
+%p
+  Started in the upstate of South Carolina in 1999, we have worked with    |
+  numerous small businesses to help them deliver a better service to their |
+  customers or, in some cases, become much more efficent themselves.       |
+  %a{ :href => "mailto:ryan@sourcescape.com" }
+    Let us know
+  how we can help you.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc congue ipsum vestibulum libero. Aenean vitae justo. Nam eget tellus. Etiam convallis, est eu lobortis mattis, lectus tellus tempus felis, a ultricies erat ipsum at metus.
-
-h2. Litora Sociis
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi et risus. Aliquam nisl. Nulla facilisi. Cras accumsan vestibulum ante. Vestibulum sed tortor. Praesent tempus fringilla elit. Ut elit diam, sagittis in, nonummy in, gravida non, nunc. Ut orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nam egestas, orci eu imperdiet malesuada, nisl purus fringilla odio, quis commodo est orci vitae justo. Aliquam placerat odio tincidunt nulla. Cras in libero. Aenean rutrum, magna non tristique posuere, erat odio eleifend nisl, non convallis est tortor blandit ligula. Nulla id augue.
-
-bq. Nullam mattis, odio ut tempus facilisis, metus nisl facilisis metus, auctor consectetuer felis ligula nec mauris. Vestibulum odio erat, fermentum at, commodo vitae, ultrices et, urna. Mauris vulputate, mi pulvinar sagittis condimentum, sem nulla aliquam velit, sed imperdiet mi purus eu magna. Nulla varius metus ut eros. Aenean aliquet magna eget orci. Class aptent taciti sociosqu ad litora.
-
-Vivamus euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vel nibh ut turpis dictum sagittis. Aliquam vel velit a elit auctor sollicitudin. Nam vel dui vel neque lacinia pretium. Quisque nunc erat, venenatis id, volutpat ut, scelerisque sed, diam. Mauris ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec mattis. Morbi dignissim sollicitudin libero. Nulla lorem.
-
+%h1 Of Interest
+%p
+  %a{ :href => "http://weblog.sourcescape.com" }
+    Knock::OnWood
+  %span.bright &gt;&gt;
+  the (mostly technical) web log of Ryan Wood.
+-#
+  #client_login
+    %form{ :action => "http://sourcescape.projectpath.com/login/authenticate", :method => "post", :style => "margin: 0px" }
+      %span Client Login &gt;&gt;
+      username: 
+      %input{ :type => "text", :name => "user_name", :style => "font-size: 14px;" }
+      password: 
+      %input{ :type => "text", :name => "password", :style => "font-size: 14px;" }
+      %input{ :type => "submit", :value => "Sign in" }
