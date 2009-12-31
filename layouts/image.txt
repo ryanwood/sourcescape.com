@@ -1,0 +1,10 @@
+---
+extension: html
+filter:    haml
+author: Ryan Wood
+layout: default
+---
+#sidebar.prepend-1.colborder.span-8
+  %img{ :src => "images/web_solutions_nature.gif" }
+#content.prepend-1.append-1.span-12.last
+  = @content

@@ -1,3 +1,12 @@
+/*
+#000000   Black
+#2F4E6F   Dark Blue
+#98B1C4   Med Blue
+#C8D7E3   Light Blue
+#E15119   Orange
+#CCCCCC   Gray
+*/
+ 
 body {
   margin: 0;
   margin-bottom: 25px;
@@ -31,21 +40,21 @@ a:hover {
 }
  
 #header {
-  background-image: url(images/header_back.gif);
+  background-image: url(../images/header_back.gif);
   background-repeat: repeat-x;
   background-position: top left;
   height: 100px;
 }
  
 #logo {
-  background-image: url(images/logo.gif);
+  background-image: url(../images/logo.gif);
   background-repeat: no-repeat;
   background-position: top right;
   height: 100px;
 }
  
 #sidebar {
-  background: #353535 url(images/web_solutions_nature.gif);
+  background: #353535 url(../images/web_solutions_nature.gif);
   background-repeat: no-repeat;
   background-position: center left;
   height: 394px;
@@ -88,6 +97,7 @@ a:hover {
  
 #client_login {
   clear: left;
+  /* border-top: 1px solid black; */
   text-align:right;
   padding:10px;
   background: #2F4E6F;

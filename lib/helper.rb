@@ -1,6 +1,4 @@
-# breadcrumbs.rb
-
-module BreadcrumbsHelper
+module Helper
   # call-seq:
   #    breadcrumbs( page )    => html
   #
@@ -20,9 +18,9 @@ module BreadcrumbsHelper
     html << list.join("\n")
     html << "\n</ul>\n"
     html
-  end
-end  # module Breadcrumbs
+  end  
+end  # module Helper
 
-Webby::Helpers.register(BreadcrumbsHelper)
+Webby::Helpers.register(Helper)
 
 # EOF

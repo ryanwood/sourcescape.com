@@ -36,8 +36,17 @@ body
     ul
       padding: 0
       li
-        padding: 0 1em
+        padding: 0 10px
         display: inline
+        a
+          color = !light_gray
+          padding: 5px
+          &:hover
+            background-color = !orange
+            color = !light_blue
+            text-decoration: none
+            -moz-border-radius: .5em
+            -webkit-border-radius: .5em
         
   #tagline
     color: #E15119
@@ -57,15 +66,24 @@ body
   #sidebar
     margin: 1em 0
     text-align: center
+    height: 100%
     img
       border: 1px solid #CCCCCC
       
   #content
     h1
       font-size: 2em
+      padding: 20px 0 5px 0
       border-bottom: 1px solid #999
-      color= !light_gray
-  
+      color = !dark_blue
+      letter-spacing: -0.05em
+    h2
+      color = !orange
+      font-size: 1.75em
+      padding: 5px 0
+      letter-spacing: -0.05em
+      a
+        text-decoration: none
 
 #client_login
   clear: left
@@ -77,13 +95,19 @@ body
 .bright
   color: #E15119
 
+#footer
+  color = !med_blue
+  text-align: center
 
 a
-  color: #ccc
+  color = !orange
   &:hover
-    background-color: #ccc
-    color: #000
+    color = !dark_blue
+    background-color = !light_blue
     text-decoration: none
+    
+
+    
 p.callout
   font-size: 1.5em
   letter-spacing: -.1em
@@ -92,3 +116,40 @@ p.callout
   -moz-border-radius: .5em
   -webkit-border-radius: .5em
   padding: 20px
+  margin: 1em 0
+
+#contact
+  font-size: 1.25em
+  
+table.portfolio
+  tr
+    vertical-align: top
+    td
+      padding: 2em 0
+      border-bottom = 1px "solid" !light_blue
+      span.label
+        color = !dark_blue
+        font-weight: bold
+    td.image
+      vertical-align: top
+      width: 320px
+
+#portfolio
+  h2
+    a
+      margin-left: 1em
+      padding: 0.25em
+      font-size: 65%
+      color = !dark_blue
+      background-color = !light_blue
+  img
+    float: right
+    margin: 10px 20px 10px 10px
+    padding: 1em
+    border: 1px solid #999
+  span.label
+    color = !dark_blue
+    font-weight: bold
+  .client
+    padding: 20px 0
+    border-bottom = 1px "solid" !light_blue

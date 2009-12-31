@@ -1,7 +1,8 @@
 ---
-title: Home Page
+title: About
 created_at: 2008-08-02 14:06:40.000000 -06:00
 filter: haml
+layout: image
 ---
 %p.callout
   We are a web development firm specializing in cutting-edge web applications |
@@ -11,16 +12,13 @@ filter: haml
   Started in the upstate of South Carolina in 1999, we have worked with    |
   numerous small businesses to help them deliver a better service to their |
   customers or, in some cases, become much more efficent themselves.       |
-  %a{ :href => "mailto:ryan@sourcescape.com" }
-    Let us know
+%p
+  Feel free to browse through some of our
+  %a{ :href => "portfolio.html"}recent projects
+  and 
+  %a{ :href => "contact.html" }Let us know
   how we can help you.
 
-%h1 Of Interest
-%p
-  %a{ :href => "http://weblog.sourcescape.com" }
-    Knock::OnWood
-  %span.bright &gt;&gt;
-  the (mostly technical) web log of Ryan Wood.
 -#
   #client_login
     %form{ :action => "http://sourcescape.projectpath.com/login/authenticate", :method => "post", :style => "margin: 0px" }

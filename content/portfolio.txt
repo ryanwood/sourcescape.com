@@ -1,0 +1,60 @@
+---
+title:      Portfolio
+created_at: 2009-12-30 15:06:30.609752 -05:00
+filter: haml
+layout: default
+---
+#content.prepend-1.append-1.span-22.last
+  %h1 Portfolio
+  #portfolio
+    .client
+      %img{ :src => "images/portfolio/prism.png" }
+      %h2 
+        Prism Content Solutions
+        %a{ :href => "http://www.prismcontent.com", :target => "_blank" }prismcontent.com &raquo;
+      %p Prism Content Solutions provides custom publishing solutions for personalizing local marketing materials. They provide their clients with an efficient and cost-effective solutions from general print to complex custom publications. We have become a partner of their's to help with scaling and expanding their existing Ruby on Rails application.
+      %p
+        %span.label> Scope of Work
+        \: Custom web application development, Ruby processing jobs
+      %p
+        %span.label> Tools Used
+        \: Ruby on Rails, jQuery
+    
+    .client
+      %img{ :src => "images/portfolio/pastor_resources.png" }
+      %h2 
+        The JCA Company
+        %a{ :href => "http://guide.pastorresources.com", :target => "_blank" }guide.pastorresources.com &raquo;
+      %p The JCA Company is a publishing company that specializes in "serving those who serve the church". They needed a web-based system to gather leads from their advertising booklet, manage those leads in house, and serve those leads back to their customers in a clean user-friendly fashion. We built a full solution using Rails to collect, manage and distribute those leads which has dramatically increased their productivity.
+      %p
+        %span.label> Scope of Work
+        \: Application Architecture, Custom web application development
+      %p
+        %span.label> Tools Used
+        \: Ruby on Rails
+
+    .client
+      %img{ :src => "images/portfolio/olympus.png" }
+      %h2
+        Olympus
+        %a{ :href => "http://inventory.olympusnet.com", :target => "_blank" }inventory.olympusnet.com &raquo;
+      %p Olympus is a marketing and publishing company focused on providing value to their clients through technology. We implemented a custom inventory management system so they could better services their high-volume clients. Using web 2.0 technologies like ajax, we were able to make a compelling interface for their clients to order inventory for multiple locations.
+      %p
+        %span.label> Scope of Work
+        \: Application Architecture, Custom web application development, Database design
+      %p
+        %span.label> Tools Used
+        \: Ruby on Rails, Prototype, Scriptaculous, Standards based HTML & CSS
+             
+    .client
+      %img{ :src => "images/portfolio/benefit_resources.png" }
+      %h2
+        Benefit Resources
+        %a{ :href => "http://www.benefitresources.biz", :target => "_blank" }benefitresources.biz &raquo;
+      %p When Benefit Resources, a licensed Third Party Administrator that specializes in COBRA, HRA, and Cafeteria Plan Administration, needed a way to better manage their benefits administration, they turned to Sourcescape. We create a tool that automated the collection and management of their application process.
+      %p
+        %span.label> Scope of Work
+        \: Custom web application development
+      %p
+        %span.label> Tools Used
+        \: Ruby on Rails

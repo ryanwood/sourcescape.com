@@ -7,7 +7,7 @@ author: Ryan Wood
 %html{:lang => "en-us", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}
-    %title= @page.title
+    %title= "Sourcescape : #{@page.title}"
     %meta{:content => @page.author, :name => "author"}
     / Blueprint CSS Framework
     %link{:href => "/css/blueprint/screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
@@ -24,14 +24,20 @@ author: Ryan Wood
         #menu.span-16
           %ul
             %li
-              %a{ :href => "index.html" }
-                Home
-            %li Portfolio
+              %a{ :href => "index.html" }About 
+            %li 
+              %a{ :href => "portfolio.html" }Portfolio
+            %li 
+              %a{ :href => "blog.html" }Blog
+            %li 
+              %a{ :href => "contact.html" }Contact
+          -#
+            %ul
+              - links = @pages.find(:all, :in_directory => '/').collect do |page|
+                %li
+                  = link_to(page.title, page)
         #tagline.span-8.last Web Solutions for the Enlightened Mind
       #main.span-24.last
-        #sidebar.prepend-1.append-1.span-8
-          %img{ :src => "url(../images/web_solutions_nature.gif)" }
-        #content.append-1.span-13.last
-          = @content
+        = @content
       #footer.column.span-20.prepend-2.append-2.last
-       
+        Copyright &copy; 2009 Sourcescape. All Rights Reserved.
