@@ -12,6 +12,10 @@ layout: image
   Started in the upstate of South Carolina in 1999, we have worked with    |
   numerous small businesses to help them deliver a better service to their |
   customers or, in some cases, become much more efficent themselves.       |
+%blockquote{ :cite => "Dave Wike" }
+  %p It's one thing to have a quality coder... It's quite another to have a genius consultant that views a project from top to bottom before he writes even a line of code to make sure every angle and possible issue/problem has been addressed. And even then (because a client always thinks of something after-the-fact!), Sourcescape was still flexible in providing solutions to make sure we were happy.
+  .author Dave Wike, President
+  .company The JCA Company
 %p
   Feel free to browse through some of our
   %a{ :href => "portfolio.html"}recent projects

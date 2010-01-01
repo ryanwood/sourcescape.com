@@ -4,17 +4,16 @@ created_at: 2009-12-31 20:44:32.081113 -05:00
 filter: haml
 layout: image
 ---
-%h1= h(@page.title)
-#about
-  %img{ :src => "images/ryan.jpg" }
-  %p Ryan Wood is the founder and principal of Sourcescape. He stumbled into database and web development in the late 1990s and spends most of his time building web applications using Ruby on Rails and other open source tools.
-  %p 
-    He also heads up 
-    %a{ :href => "http://upstaterb.org" }Upstate.rb
-    , the Ruby & Rails user group for the upstate of South Carolina.
-  %p Prior to his life in software development, Ryan was a counselor, philosopher, and amateur theologian.
-  %p 
-    He can be reached at&nbsp;
-    %a{ :href => "mailto:ryan@sourcescape.com" }> ryan@sourcescape.com
-    \.
-  
+#about_container
+  %h1= h(@page.title)
+  #about.span-10
+    %p Sourcescape was founded in Greenville, South Carolina in 1999. We are a small web application development company that prides itself in understanding customers problems and bring timely and high-quality solutions to the table.
+    %p
+      We have chosen
+      =link_to "Ruby on Rails", "http://rubyonrails.org/"
+      as our technology choice for delivering these solutions. It enables us to develop fast, secure, and robust solutions to challenging business problems.
+    %p
+      = link_to("Let us know how we can help you.", "contact.html")
+  .side_image.span-3.last
+    %img{ :src => "images/rails.png" }
+    

@@ -1,0 +1,23 @@
+---
+title:      People
+created_at: 2010-01-01 08:26:45.139200 -05:00
+filter: haml
+layout: image
+---
+#people_container
+  %h1= h(@page.title)
+  .person.span-10
+    %h2 Ryan Wood
+    %h3 Founder and Principal
+    %p Ryan stumbled into database and web development in the late 1990s and spends most of his time building web applications using Ruby on Rails and other open source tools.
+    %p 
+      He also heads up 
+      %a{ :href => "http://upstaterb.org" }Upstate.rb
+      , the Ruby & Rails user group for the upstate of South Carolina.
+    %p Prior to his life in software development, Ryan was a counselor, philosopher, and amateur theologian.
+    %p 
+      He can be reached at&nbsp;
+      %a{ :href => "mailto:ryan@sourcescape.com" }> ryan@sourcescape.com
+      \.
+  .side_image.span-3.last
+    %img{ :src => "images/ryan.jpg" }

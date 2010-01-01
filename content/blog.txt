@@ -4,12 +4,14 @@ created_at: 2009-12-30 15:09:52.756421 -05:00
 filter: haml
 layout: image
 ---
-%h1 The Blog
-#blog
+#blog_container
+  %h1= h(@page.title)
   %h2
     %a.large_link{ :href => "http://blog.ryanwood.com", :target => "_blank" }knock.on_wood
     &raquo;
-  %p
-    The (mostly technical) web log of Ryan Wood, 
-    %br
-    the founder and principal of Sourcescape.
+  %p The (mostly technical) web log of Ryan Wood, the founder and principal of Sourcescape.
+
+  %h2
+    %a.large_link{ :href => "http://upstaterb.org", :target => "_blank" }Upstate Ruby Brigade
+    &raquo;
+  %p Sourcescape is a sponsor of the Upstate.rb, the Ruby and Rails users group for the upstate of South Carolina.

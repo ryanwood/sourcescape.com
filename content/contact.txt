@@ -4,15 +4,16 @@ created_at: 2009-12-30 15:06:37.980205 -05:00
 filter: haml
 layout: image
 ---
-%h1 Contact Us
-%p We would love to hear from you. Please let us know how we can help. 
-#contact
-  %p
-    Sourcescape
-    %br
-    404 Barley Mill Drive
-    %br
-    Greer, SC 29651
-  %p 864.517.0030
+#contact_container
+  %h1= h(@page.title)
+  %p We would love to hear from you. Please let us know how we can help.
+  .address
+    %p
+      Sourcescape
+      %br
+      404 Barley Mill Drive
+      %br
+      Greer, SC 29651
+    %p 864.517.0030
   %p 
     %a{ :href => "mailto:contact@sourcescape.com" }contact@sourcescape.com

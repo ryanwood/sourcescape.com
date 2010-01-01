@@ -5,8 +5,8 @@ filter: haml
 layout: default
 ---
 #content.prepend-1.append-1.span-22.last
-  %h1 Portfolio
-  #portfolio
+  #portfolio_container
+    %h1= h(@page.title)
     .client
       %img{ :src => "images/portfolio/prism.png" }
       %h2 

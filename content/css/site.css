@@ -86,7 +86,8 @@ body
     text-align: center
     height: 100%
     img
-      border: 1px solid #CCCCCC
+      padding: 2px
+      border: 1px solid #999
       
   #content
     h1
@@ -135,30 +136,22 @@ p.callout
   padding: 20px
   margin: 1em 0
 
-#contact
-  font-size: 1.25em
+#contact_container
+  .address
+    font-size: 1.25em
   
-table.portfolio
-  tr
-    vertical-align: top
-    td
-      padding: 2em 0
-      border-bottom = 1px "solid" !light_blue
-      span.label
-        color = !dark_blue
-        font-weight: bold
-    td.image
-      vertical-align: top
-      width: 320px
-
-#portfolio
+#portfolio_container
   h2
+    padding-bottom: 0
     a
-      margin-left: 1em
+      margin: 2px 10px
       padding: 0.25em
       font-size: 65%
       color = !dark_blue
       background-color = !light_blue
+      &:hover
+        background-color = !dark_blue
+        color = !white
   img
     float: right
     margin: 10px 20px 10px 10px
@@ -171,9 +164,37 @@ table.portfolio
     padding: 20px 0
     border-bottom = 1px "solid" !light_blue
     
-#about
-  img
-    float: right
-    margin: 0 0px 10px 10px
-    padding: 2px
-    border: 1px solid #999
+#people_container
+  h2
+    padding-bottom: 0
+    margin-bottom: 0
+  h3
+    font-size: 85%
+    font-style: italic
+    
+.side_image
+  text-align: right
+  
+blockquote
+  font-size: 85%
+  text-indent: 25px
+  background: url(../images/quotes1.png)
+  background-position: 0 2px
+  background-repeat: no-repeat
+  p
+    color = !dark_blue
+    display: inline
+    margin: 0
+    padding-right: 24px
+    background: url(../images/quotes2.png)
+    background-position: bottom right
+    background-repeat: no-repeat
+  .author
+    font-size: 100%
+    font-weight: bold
+    color = !black
+    font-style: normal
+    text-align: right
+  .company
+    text-align: right
+    font-style: normal
