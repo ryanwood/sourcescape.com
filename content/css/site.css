@@ -136,6 +136,11 @@ p.callout
   padding: 20px
   margin: 1em 0
 
+#about_container
+  li
+    font-size: 1.25em
+    color = !dark_blue
+
 #contact_container
   .address
     font-size: 1.25em

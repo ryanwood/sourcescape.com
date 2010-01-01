@@ -7,11 +7,21 @@ layout: image
 #about_container
   %h1= h(@page.title)
   #about.span-10
-    %p Sourcescape was founded in Greenville, South Carolina in 1999. We are a small web application development company that prides itself in understanding customers problems and bring timely and high-quality solutions to the table.
+    %p Sourcescape was founded in Greenville, South Carolina in 1999. We are a small web application development company that prides itself in understanding customers problems and bring timely and high-quality solutions to the table. We have a few core competencies.
+    
+    %ul
+      %li Web Application Development
+      %li Software Architecture
+      %li Database Design & Development
+      
+    %p We love the web as an application platform. We strive to build the best web applications possible to meet the custom needs of your business.
     %p
       We have chosen
       =link_to "Ruby on Rails", "http://rubyonrails.org/"
       as our technology choice for delivering these solutions. It enables us to develop fast, secure, and robust solutions to challenging business problems.
+      
+
+        
     %p
       = link_to("Let us know how we can help you.", "contact.html")
   .side_image.span-3.last
