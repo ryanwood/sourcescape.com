@@ -21,19 +21,6 @@ layout: default
         \: Ruby on Rails, jQuery
     
     .client
-      %img{ :src => "images/portfolio/pastor_resources.png" }
-      %h2 
-        The JCA Company
-        %a{ :href => "http://guide.pastorresources.com", :target => "_blank" }guide.pastorresources.com &raquo;
-      %p The JCA Company is a publishing company that specializes in "serving those who serve the church". They needed a web-based system to gather leads from their advertising booklet, manage those leads in house, and serve those leads back to their customers in a clean user-friendly fashion. We built a full solution using Rails to collect, manage and distribute those leads which has dramatically increased their productivity.
-      %p
-        %span.label> Scope of Work
-        \: Application Architecture, Custom web application development
-      %p
-        %span.label> Tools Used
-        \: Ruby on Rails
-
-    .client
       %img{ :src => "images/portfolio/olympus.png" }
       %h2
         Olympus
@@ -45,7 +32,20 @@ layout: default
       %p
         %span.label> Tools Used
         \: Ruby on Rails, Prototype, Scriptaculous, Standards based HTML & CSS
-             
+    
+    .client
+      %img{ :src => "images/portfolio/pastor_resources.png" }
+      %h2 
+        The JCA Company
+        %a{ :href => "http://guide.pastorresources.com", :target => "_blank" }guide.pastorresources.com &raquo;
+      %p The JCA Company is a publishing company that specializes in "serving those who serve the church". They needed a web-based system to gather leads from their advertising booklet, manage those leads in house, and serve those leads back to their customers in a clean user-friendly fashion. We built a full solution using Rails to collect, manage and distribute those leads which has dramatically increased their productivity.
+      %p
+        %span.label> Scope of Work
+        \: Application Architecture, Custom web application development
+      %p
+        %span.label> Tools Used
+        \: Ruby on Rails
+      
     .client
       %img{ :src => "images/portfolio/benefit_resources.png" }
       %h2

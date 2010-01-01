@@ -16,7 +16,7 @@ author: Ryan Wood
       %link{:href => "/css/blueprint/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/css/site.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
-  %body
+  %body 
     #top_container.container
       #header.span-24.last
         %a{ :href => "index.html" }
@@ -24,13 +24,13 @@ author: Ryan Wood
         #menu.span-16
           %ul
             %li
-              %a{ :href => "index.html" }About 
+              = link_to_page('Portfolio')
             %li 
-              %a{ :href => "portfolio.html" }Portfolio
+              = link_to_page('Blog')
+            %li
+              = link_to_page('About')
             %li 
-              %a{ :href => "blog.html" }Blog
-            %li 
-              %a{ :href => "contact.html" }Contact
+              = link_to_page('Contact')
           -#
             %ul
               - links = @pages.find(:all, :in_directory => '/').collect do |page|
@@ -38,6 +38,9 @@ author: Ryan Wood
                   = link_to(page.title, page)
         #tagline.span-8.last Web Solutions for the Enlightened Mind
       #main.span-24.last
+        #breadcrumbs.prepend-1.span-23
+          - if @page.title != 'Home'
+            = breadcrumbs(@page)
         = @content
       #footer.column.span-20.prepend-2.append-2.last
-        Copyright &copy; 2009 Sourcescape. All Rights Reserved.
+        Copyright &copy; 2010 Sourcescape. All Rights Reserved.
