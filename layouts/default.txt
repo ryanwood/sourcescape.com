@@ -38,8 +38,8 @@ author: Ryan Wood
                   = link_to(page.title, page)
         #tagline.span-8.last Web Solutions for the Enlightened Mind
       #main.span-24.last
-        #breadcrumbs.prepend-1.span-23
-          - if @page.title != 'Home'
+        - if @page.title != 'Home'
+          #breadcrumbs.prepend-1.span-23
             = breadcrumbs(@page)
         = @content
       #footer.column.span-20.prepend-2.append-2.last

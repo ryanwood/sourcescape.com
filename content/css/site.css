@@ -55,31 +55,34 @@ body
     font-style: italic
     font-family: Georgia
     text-align: right
-
-ul.breadcrumbs
-  padding: 0
-  margin: 0
-  li
-    color = !dark_gray
-    font-size: 0.75em
-    display: inline
-    a
-      color = !dark_gray
-      background: transparent url(../images/arrow.png) no-repeat center right
-      padding-right: 18px
-      &:hover
-        color = !orange
+#breadcrumbs
+  background-color: #e4e4e4
+  padding-bottom: 2px
+  margin-bottom: 1em
+  ul.breadcrumbs
+    padding: 0
+    margin: 0
+    li
+      color = !dark_blue
+      font-size: 0.75em
+      display: inline
+      a
+        color = !dark_blue
+        background: transparent url(../images/arrow.png) no-repeat center right
+        padding-right: 18px
+        &:hover
+          color = !orange
        
 #main
   margin: 1em 0
-  padding: 1em 0em
+  padding: 1em 0
   color = !dark_gray
   background-color = !white
   -moz-border-radius: .5em
   -webkit-border-radius: .5em
   
   #sidebar
-    margin: 1em 0
+    margin-top: 20px
     text-align: center
     height: 100%
     img
@@ -88,7 +91,7 @@ ul.breadcrumbs
   #content
     h1
       font-size: 2em
-      padding: 20px 0 5px 0
+      padding: 10px 0 5px 0
       border-bottom: 1px solid #999
       color = !dark_blue
       letter-spacing: -0.05em
