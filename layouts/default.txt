@@ -16,6 +16,16 @@ author: Ryan Wood
       %link{:href => "/css/blueprint/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/css/coderay.css", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/css/site.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3709570-5']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
   %body 
     #container.container
       #header.span-24.last
