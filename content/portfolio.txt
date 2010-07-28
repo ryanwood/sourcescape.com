@@ -8,11 +8,36 @@ layout: default
   #portfolio_container
     %h1= h(@page.title)
     .client
+      %img{ :src => "images/portfolio/weddzilla.png" }
+      %h2 
+        Weddzilla
+        %a{ :href => "http://www.weddzilla.com", :target => "_blank" }weddzilla.com &raquo;
+      %p 
+        Weddzilla &mdash; now planning a wedding is easy, social, and fun! We helped 
+        Weddzilla develop their social marketplace for wedding planning by providing 
+        tools to make wedding planning a snap and helping wedding vendors connect with 
+        brides.
+      %p
+        %span.label> Scope of Work
+        \: Custom web application development, Third party billing API integrations 
+        (CheddarGetter), Social integration to Facebook and Twitter,  
+        %acronym{ :title => "Software Development Life Cycle"} SDLC 
+        and deployment strategy
+      %p
+        %span.label> Tools Used
+        \: Ruby on Rails, jQuery, Git, Heroku, Haml, Sass, Formtastic
+        
+    .client
       %img{ :src => "images/portfolio/prism.png" }
       %h2 
         Prism Content Solutions
         %a{ :href => "http://www.prismcontent.com", :target => "_blank" }prismcontent.com &raquo;
-      %p Prism Content Solutions provides custom publishing solutions for personalizing local marketing materials. They provide their clients with an efficient and cost-effective solutions from general print to complex custom publications. We have become a partner of their's to help with scaling and expanding their existing Ruby on Rails application.
+      %p 
+        Prism Content Solutions provides custom publishing solutions for personalizing 
+        local marketing materials. They provide their clients with an efficient and 
+        cost-effective solutions from general print to complex custom publications. We 
+        have become a partner of their's to help with scaling and expanding their 
+        existing Ruby on Rails application.
       %p
         %span.label> Scope of Work
         \: Custom web application development, Ruby processing jobs
@@ -25,7 +50,12 @@ layout: default
       %h2
         Olympus
         %a{ :href => "http://inventory.olympusnet.com", :target => "_blank" }inventory.olympusnet.com &raquo;
-      %p Olympus is a marketing and publishing company focused on providing value to their clients through technology. We implemented a custom inventory management system so they could better services their high-volume clients. Using web 2.0 technologies like ajax, we were able to make a compelling interface for their clients to order inventory for multiple locations.
+      %p 
+        Olympus is a marketing and publishing company focused on providing value to 
+        their clients through technology. We implemented a custom inventory management 
+        system so they could better services their high-volume clients. Using web 2.0 
+        technologies like ajax, we were able to make a compelling interface for their 
+        clients to order inventory for multiple locations.
       %p
         %span.label> Scope of Work
         \: Application Architecture, Custom web application development, Database design
@@ -38,7 +68,13 @@ layout: default
       %h2 
         The JCA Company
         %a{ :href => "http://guide.pastorresources.com", :target => "_blank" }guide.pastorresources.com &raquo;
-      %p The JCA Company is a publishing company that specializes in "serving those who serve the church". They needed a web-based system to gather leads from their advertising booklet, manage those leads in house, and serve those leads back to their customers in a clean user-friendly fashion. We built a full solution using Rails to collect, manage and distribute those leads which has dramatically increased their productivity.
+      %p 
+        The JCA Company is a publishing company that specializes in "serving those 
+        who serve the church". They needed a web-based system to gather leads from 
+        their advertising booklet, manage those leads in house, and serve those 
+        leads back to their customers in a clean user-friendly fashion. We built 
+        a full solution using Rails to collect, manage and distribute those leads 
+        which has dramatically increased their productivity.
       %p
         %span.label> Scope of Work
         \: Application Architecture, Custom web application development
@@ -51,7 +87,11 @@ layout: default
       %h2
         Benefit Resources
         %a{ :href => "http://www.benefitresources.biz", :target => "_blank" }benefitresources.biz &raquo;
-      %p When Benefit Resources, a licensed Third Party Administrator that specializes in COBRA, HRA, and Cafeteria Plan Administration, needed a way to better manage their benefits administration, they turned to Sourcescape. We create a tool that automated the collection and management of their application process.
+      %p 
+        When Benefit Resources, a licensed Third Party Administrator that specializes in COBRA, 
+        HRA, and Cafeteria Plan Administration, needed a way to better manage their benefits 
+        administration, they turned to Sourcescape. We create a tool that automated the collection 
+        and management of their application process.
       %p
         %span.label> Scope of Work
         \: Custom web application development
