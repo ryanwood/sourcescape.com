@@ -34,15 +34,15 @@ author: Ryan Wood
         #menu.span-16
           %ul
             %li
-              = link_to_page('About')
-            %li
-              = link_to_page('Portfolio')
-            %li 
-              = link_to_page('Blog')
+              = link_to_page('Work')
             %li 
               = link_to_page('People')
             %li 
+              = link_to_page('Blog')
+            %li 
               = link_to_page('Contact')
+            %li
+              = link_to_page('About')
           -#
             %ul
               - links = @pages.find(:all, :in_directory => '/').collect do |page|
