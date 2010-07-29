@@ -18,7 +18,7 @@ layout: image
   .company The JCA Company
 %p
   Feel free to browse through some of our
-  %a{ :href => "portfolio.html"}recent projects
+  %a{ :href => "work.html"}recent projects
   and 
   %a{ :href => "contact.html" }Let us know
   how we can help you.

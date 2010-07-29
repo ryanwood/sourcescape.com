@@ -1,14 +1,14 @@
 ---
-title:      Portfolio
+title: Work
 created_at: 2009-12-30 15:06:30.609752 -05:00
 filter: haml
 layout: default
 ---
 #content.prepend-1.append-1.span-22.last
-  #portfolio_container
+  #work_container
     %h1= h(@page.title)
     .client
-      %img{ :src => "images/portfolio/weddzilla.png" }
+      %img{ :src => "images/work/weddzilla.png" }
       %h2 
         Weddzilla
         %a{ :href => "http://www.weddzilla.com", :target => "_blank" }weddzilla.com &raquo;
@@ -28,7 +28,7 @@ layout: default
         \: Ruby on Rails, jQuery, Git, Heroku, Haml, Sass, Formtastic
         
     .client
-      %img{ :src => "images/portfolio/prism.png" }
+      %img{ :src => "images/work/prism.png" }
       %h2 
         Prism Content Solutions
         %a{ :href => "http://www.prismcontent.com", :target => "_blank" }prismcontent.com &raquo;
@@ -46,7 +46,7 @@ layout: default
         \: Ruby on Rails, jQuery
     
     .client
-      %img{ :src => "images/portfolio/olympus.png" }
+      %img{ :src => "images/work/olympus.png" }
       %h2
         Olympus
         %a{ :href => "http://inventory.olympusnet.com", :target => "_blank" }inventory.olympusnet.com &raquo;
@@ -64,7 +64,7 @@ layout: default
         \: Ruby on Rails, Prototype, Scriptaculous, Standards based HTML & CSS
     
     .client
-      %img{ :src => "images/portfolio/pastor_resources.png" }
+      %img{ :src => "images/work/pastor_resources.png" }
       %h2 
         The JCA Company
         %a{ :href => "http://guide.pastorresources.com", :target => "_blank" }guide.pastorresources.com &raquo;
@@ -83,7 +83,7 @@ layout: default
         \: Ruby on Rails
       
     .client
-      %img{ :src => "images/portfolio/benefit_resources.png" }
+      %img{ :src => "images/work/benefit_resources.png" }
       %h2
         Benefit Resources
         %a{ :href => "http://www.benefitresources.biz", :target => "_blank" }benefitresources.biz &raquo;
