@@ -1,0 +1,14 @@
+---
+title:      Page not Found
+created_at: 2010-07-29 11:16:32.298265 -04:00
+filter:     haml
+layout:     image
+---
+%h1 Swing &hellip; and a miss
+
+%p Sorry, we were unable to find the page you requested.
+
+%p
+  You may want to check out the 
+  %a{ :href => '/'} home page 
+  and go from there.
