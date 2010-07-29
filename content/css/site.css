@@ -4,17 +4,17 @@ filter:    sass
 layout:    nil   # no layout
 ---
 
-!black        = "#000"
-!white        = "#FFF"
-!dark_blue    = "#2F4E6F"
-!med_blue     = "#98B1C4"
-!light_blue   = "#C8D7E3"
-!orange       = "#E15119"
-!dark_gray    = "#353535"
-!light_gray   = "#CCC"
+$black        : #000
+$white        : #FFF
+$dark_blue    : #2F4E6F
+$med_blue     : #98B1C4
+$light_blue   : #C8D7E3
+$orange       : #E15119
+$dark_gray    : #353535
+$light_gray   : #CCC
 
 body
-  background-color = !dark_gray
+  background-color : $dark_gray
   font-size: 14px
   color: #333
   background-image: url(../images/header_back.gif)
@@ -40,11 +40,11 @@ body
         padding: 0 10px
         display: inline
         a
-          color = !light_gray
+          color : $light_gray
           padding: 5px
           &:hover
-            background-color = !orange
-            color = !light_blue
+            background-color : $orange
+            color : $light_blue
             text-decoration: none
             -moz-border-radius: .5em
             -webkit-border-radius: .5em
@@ -63,21 +63,21 @@ body
     padding: 0
     margin: 0
     li
-      color = !dark_blue
+      color : $dark_blue
       font-size: 0.75em
       display: inline
       a
-        color = !dark_blue
+        color : $dark_blue
         background: transparent url(../images/arrow.png) no-repeat center right
         padding-right: 18px
         &:hover
-          color = !orange
+          color : $orange
        
 #main
   margin: 1em 0
   padding: 1em 0
-  color = !dark_gray
-  background-color = !white
+  color : $dark_gray
+  background-color : $white
   -moz-border-radius: .5em
   -webkit-border-radius: .5em
   
@@ -94,10 +94,10 @@ body
       font-size: 2em
       padding: 10px 0 5px 0
       border-bottom: 1px solid #999
-      color = !dark_blue
+      color : $dark_blue
       letter-spacing: -0.05em
     h2
-      color = !orange
+      color : $orange
       font-size: 1.75em
       padding: 5px 0
       letter-spacing: -0.05em
@@ -115,22 +115,22 @@ body
   color: #E15119
 
 #footer
-  color = !med_blue
+  color : $med_blue
   text-align: center
   margin-bottom: 2em
 
 a
-  color = !orange
+  color : $orange
   &:hover
-    color = !dark_blue
-    background-color = !light_blue
+    color : $dark_blue
+    background-color : $light_blue
     text-decoration: none
     
 p.callout
   font-size: 1.5em
   letter-spacing: -.1em
-  background-color = !light_gray
-  color = !dark_blue
+  background-color : $light_gray
+  color : $dark_blue
   -moz-border-radius: .5em
   -webkit-border-radius: .5em
   padding: 20px
@@ -139,7 +139,7 @@ p.callout
 #about_container
   li
     font-size: 1.25em
-    color = !dark_blue
+    color : $dark_blue
 
 #contact_container
   .address
@@ -152,22 +152,22 @@ p.callout
       margin: 2px 10px
       padding: 0.25em
       font-size: 65%
-      color = !dark_blue
-      background-color = !light_blue
+      color : $dark_blue
+      background-color : $light_blue
       &:hover
-        background-color = !dark_blue
-        color = !white
+        background-color : $dark_blue
+        color : $white
   img
     float: right
     margin: 10px 20px 10px 10px
     padding: 1em
     border: 1px solid #999
   span.label
-    color = !dark_blue
+    color : $dark_blue
     font-weight: bold
   .client
     padding: 20px 0
-    border-bottom = 1px "solid" !light_blue
+    border-bottom: 1px solid $light_blue
     
 #people_container
   h2
@@ -187,7 +187,7 @@ blockquote
   background-position: 0 2px
   background-repeat: no-repeat
   p
-    color = !dark_blue
+    color : $dark_blue
     display: inline
     margin: 0
     padding-right: 24px
@@ -197,7 +197,7 @@ blockquote
   .author
     font-size: 100%
     font-weight: bold
-    color = !black
+    color : $black
     font-style: normal
     text-align: right
   .company
