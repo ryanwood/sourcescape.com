@@ -7,13 +7,26 @@ layout: image
 #contact_container
   %h1= h(@page.title)
   %p We would love to hear from you. Please let us know how we can help.
-  .address
-    %p
-      Sourcescape
-      %br
-      404 Barley Mill Drive
-      %br
-      Greer, SC 29651
-    %p 864.517.0030
-  %p 
-    %a{ :href => "mailto:contact@sourcescape.com" }contact@sourcescape.com
+  -#
+    .address
+      %p
+        Sourcescape
+        %br
+        404 Barley Mill Drive
+        %br
+        Greer, SC 29651
+      %p 864.517.0030
+    %p 
+      %a{ :href => "mailto:contact@sourcescape.com" }contact@sourcescape.com
+  
+  :javascript
+    var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+  
+  :javascript
+    var z7x4a3 = new WufooForm();
+    z7x4a3.initialize({
+    'userName':'sourcescape', 
+    'formHash':'z7x4a3', 
+    'autoResize':true,
+    'height':'714'});
+    z7x4a3.display();

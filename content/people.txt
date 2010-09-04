@@ -15,9 +15,5 @@ layout: image
       %a{ :href => "http://upstaterb.org" }Upstate.rb
       , the Ruby & Rails user group for the upstate of South Carolina.
     %p Prior to his life in software development, Ryan was a counselor, philosopher, and amateur theologian.
-    %p 
-      He can be reached at&nbsp;
-      %a{ :href => "mailto:ryan@sourcescape.com" }> ryan@sourcescape.com
-      \.
   .side_image.span-3.last
     %img{ :src => "images/ryan.jpg" }
