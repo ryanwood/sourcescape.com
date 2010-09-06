@@ -1,0 +1,15 @@
+---
+title:      sitemap
+created_at: 2010-09-06 15:01:03.409286 -04:00
+filter:     haml
+extension:  xml
+layout:     nil
+---
+!!! xml
+%urlset{ :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9" }
+  - @pages.find(:all, :in_directory => '/').select{ |p| p.filename !~ /(old|resume|sitemap|404)/ }.each do |page|
+    %url
+      = "<loc>http://sourcescape.com#{page.url}</loc>"
+      %lastmod= page.mtime.strftime("%Y-%m-%d")
+      %changefreq monthly
+      -# %priority 0.8
