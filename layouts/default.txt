@@ -1,14 +1,16 @@
 ---
 extension: html
 filter:    haml
-author: Ryan Wood
 ---
 !!! Strict
 %html{:lang => "en-us", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}
-    %title= "Sourcescape : #{@page.title}"
-    %meta{:content => @page.author, :name => "author"}
+    %title= title(@page)
+    %meta{:name => "author", :content => 'Ryan Wood'}
+    %meta{:name => "description", :content => 'Sourcescape is Greenville, South Carolina based web develoment firm that focuses on helping your company deliver quality software.'}
+    %meta{:name => "keywords", :content => 'Sourcescape, Ruby, Ruby on Rails, Design, Development, Ryan Wood, Greer Development, Greenville Development, Git Training, Web Consulting'}
+    %meta{:name => "google-site-verification", :content => 'T5psD-gMVA5Zu7F7V_6QCpsbrsV9pz_imPjBuyK0cn8'}
     / Blueprint CSS Framework
     %link{:href => "/css/blueprint/screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/css/blueprint/print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
@@ -26,23 +28,19 @@ author: Ryan Wood
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-  %body 
+  %body
     #container.container
       #header.span-24.last
         %a{ :href => "index.html" }
           #logo
         #menu.span-16
           %ul
-            %li
-              = link_to_page('Work')
-            %li 
-              = link_to_page('People')
-            %li 
-              = link_to_page('Blog')
-            %li 
-              = link_to_page('Contact')
-            %li
-              = link_to_page('About')
+            %li= link_to_page('Home')
+            %li= link_to_page('About')
+            %li= link_to_page('Work')
+            %li= link_to_page('People')
+            %li= link_to_page('Blog')
+            %li= link_to_page('Contact')
           -#
             %ul
               - links = @pages.find(:all, :in_directory => '/').collect do |page|

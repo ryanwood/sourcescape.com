@@ -13,6 +13,7 @@ layout: image
       %li Web Application Development
       %li Software Architecture
       %li Database Design & Development
+      %li Git Consulting &amp; Training
       
     %p We love the web as an application platform. We strive to build the best web applications possible to meet the custom needs of your business.
     %p

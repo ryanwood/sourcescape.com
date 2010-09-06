@@ -18,7 +18,14 @@ module Helper
     html << list.join("\n")
     html << "\n</ul>\n"
     html
-  end  
+  end
+  
+  def title(page)
+    s = "Sourcescape"
+    s += " | #{page.title}" if page.title && page.title != 'Home'
+    s
+  end
+    
 end  # module Helper
 
 Webby::Helpers.register(Helper)
